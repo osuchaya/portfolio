@@ -1,3 +1,6 @@
+header {
+  color: rgb(37, 24, 218);
+}
 body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -7,32 +10,36 @@ body {
     rgba(236, 142, 102, 0.6) 100%
   );
 }
-.nav-right {
-  float:right
-}
- {
 
+.nav {
+  
 }
+
 
 
 
 ul {
-  background: rgb(123, 83, 217);
-
+  background: rgb(178, 156, 229);
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
 }
 
 #work {
   padding: 20px;
   margin-left: 5%;
   margin-right: 5%;
+  flex: 0 0 100%;
 }
 h1 {
   margin-left: 10%;
 }
 
 li {
-  display: inline-flex;
-  font-size: larger;
+  display:flex;
+  font-weight: bold;
+  align-self: flex-end;
+
 }
 
 p {
@@ -44,7 +51,7 @@ li:hover {
   background: grey;
 }
 .container {
-  display: inline-flexbox;
+  display: flex;
   width: 60%;
   border: 3px;
   border-style:dotted;
@@ -82,9 +89,11 @@ img {
   display:flexbox;
   margin-top: 5%;
   margin-bottom: 5%;
+  max-width: 100%;
 }
 .zoom-box {
   transition: all .2s ease-in-out;
+  
 }
 .zoom-box:hover {
  transform:scale(1.2);
@@ -92,7 +101,14 @@ img {
 }
 footer {
   margin-top: 25%;
-  background-color: rgb(166, 84, 196);
+  text-align: center;
+  padding-bottom: 100px;
+  
+}
+.contacts {
+  display: flex;
+  justify-content:space-between;
+
 }
 
 .text {
@@ -101,8 +117,8 @@ footer {
   
 }
 @media screen and (min-width: 992px) {
-  .container {
-    flex: 1 1 100%
+  .container .container-2{
+    flex: 2 2 50%
   }
 }
   
